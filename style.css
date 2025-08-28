@@ -1,0 +1,45 @@
+.navbar {
+    background-color: rgb(10, 37, 73);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a #logo{
+    width: 250px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu a{
+    color: antiquewhite;
+    text-decoration: none;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    a #logo{
+width: 20vw;
+    }
+}
+.menu li:hover {
+    background-color: rgb(127, 127, 245);
+}
