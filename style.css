@@ -42,9 +42,16 @@ width: 25vw;
 }
 
 @media screen and (max-width: 600px){
-    .menu{
-font-size: 5px;
-font-weight: bold;
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu li{
+      font-size: 12px;
     }
 }
 
