@@ -37,9 +37,17 @@ body{
 
 @media screen and (max-width: 600px){
     a #logo{
-width: 20vw;
+width: 25vw;
     }
 }
+
+@media screen and (max-width: 600px){
+    .menu{
+font-size: 10px;
+font-weight: bold;
+    }
+}
+
 .menu li:hover {
     background-color: rgb(127, 127, 245);
 }
