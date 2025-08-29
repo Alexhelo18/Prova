@@ -1,0 +1,89 @@
+/* Nascondo la checkbox */
+#toggle {
+  display: none;
+}
+
+/* Stile del bottone */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Lista nascosta */
+.lista {
+  position: absolute;     /* si stacca dal flusso */
+  top: 52px;              /* distanza dall’alto (in base all’altezza della navbar) */
+  left: 20%;             /* spostata vicino al bottone */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* effetto menu a tendina */
+  width: 200px;           /* larghezza menu */
+  z-index: 1000;          /* sopra agli altri elementi */
+}
+
+
+/* Quando clicco sul bottone → mostra lista */
+#toggle:checked + .lista {
+  max-height: 500px; /* abbastanza grande da contenere la lista */
+  padding: 10px;
+}
+
+/* Stile elementi della lista */
+.lista li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+/* Link della lista */
+.lista a {
+  text-decoration: none;
+  color: black;
+  display: block; /* rende cliccabile tutta la riga */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* logo a destra, menu a sinistra */
+  align-items: center;            /* allinea verticalmente */
+  padding: 5px 20px;
+  gap: 30px;
+  background-color: rgb(12, 37, 83);
+}
+
+/* Contenitore logo */
+.Logo a {
+  display: inline-block;
+}
+
+.Logo img {
+  width: 200px;
+  display: block; /* elimina lo spazio sotto l’immagine */
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
