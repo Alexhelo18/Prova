@@ -44,7 +44,7 @@ width: 25vw;
 
 @media screen and (max-width: 600px) {
   .menu {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 15px;
   }
@@ -58,13 +58,4 @@ width: 25vw;
 
 .menu li:hover {
     background-color: rgb(127, 127, 245);
-}
-
-.hamburger {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
 }
